@@ -14,3 +14,10 @@ Here is a video of it working https://www.youtube.com/watch?v=7tw5OXFeZJ8
 There is a removed feature called Studio Mode which allows for map editing
 using this Dll hack which gets injected at any time allows you to run studio mode
 this was created with the help of reverse engineering
+
+# Clipboard Replacer
+This is a simple program that actively runs in the background.
+
+It checks for certain things in the clipboard and replaces it
+
+Clipmon.cs is a modified class from a malware sample I have
