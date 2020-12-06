@@ -29,3 +29,7 @@ This turns a file into a bmp image and can be reversed
 # Run in Memory (Day 5)
 This allows c# or vb.net applications to be run in memory using Assembly.Load Invoke method
 ![Example](https://i.imgur.com/KhYo5Vr.png)
+
+# Triple Des Encryption/Decryption
+You can use this to Encrypt or Decrypt a file using Triple Des
+![Befor & After](https://i.imgur.com/YysE8NI.png)
