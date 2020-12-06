@@ -105,21 +105,12 @@ namespace TRIPDES
             }
 
             TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
-            //set the secret key for the tripleDES algorithm
             tdes.Key = keyArray;
-            //mode of operation. there are other 4 modes.
-            //We choose ECB(Electronic code Book)
             tdes.Mode = CipherMode.ECB;
-            //padding mode(if any extra byte added)
-
             tdes.Padding = PaddingMode.PKCS7;
-
             ICryptoTransform cTransform = tdes.CreateEncryptor();
-            //transform the specified region of bytes array to resultArray
             EncedArray = cTransform.TransformFinalBlock(ArrayToEnc, 0, ArrayToEnc.Length);
-            //Release resources held by TripleDes Encryptor
             tdes.Clear();
-            //Return the encrypted data into unreadable string format
         }
 
         public static void Decrypt(byte[] ArrayToDec, bool useHashing, string key, out byte[] DecedArray)
@@ -128,34 +119,25 @@ namespace TRIPDES
 
             if (useHashing)
             {
-                //if hashing was used get the hash code with regards to your key
                 MD5CryptoServiceProvider hashmd5 = new MD5CryptoServiceProvider();
                 keyArray = hashmd5.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
-                //release any resource held by the MD5CryptoServiceProvider
 
                 hashmd5.Clear();
             }
             else
             {
-                //if hashing was not implemented get the byte code of the key
                 keyArray = UTF8Encoding.UTF8.GetBytes(key);
             }
 
             TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
-            //set the secret key for the tripleDES algorithm
             tdes.Key = keyArray;
-            //mode of operation. there are other 4 modes. 
-            //We choose ECB(Electronic code Book)
 
             tdes.Mode = CipherMode.ECB;
-            //padding mode(if any extra byte added)
             tdes.Padding = PaddingMode.PKCS7;
 
             ICryptoTransform cTransform = tdes.CreateDecryptor();
             DecedArray = cTransform.TransformFinalBlock(ArrayToDec, 0, ArrayToDec.Length);
-            //Release resources held by TripleDes Encryptor                
             tdes.Clear();
-            //return the Clear decrypted TEXT
         }
     }
 }
