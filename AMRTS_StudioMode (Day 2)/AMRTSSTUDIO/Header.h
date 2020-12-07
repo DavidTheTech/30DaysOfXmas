@@ -12,8 +12,8 @@ char aStudio[] = "Studio";
 typedef void(__thiscall *RegisterRuncode) (DWORD *tshis, char *a2, int a3, int a4, int a5, int a6, int a7);
 RegisterRuncode RegRunCode = (RegisterRuncode)(ScanAddress(0x4B6520));
 
-typedef int(*StudioProcess) (void);
-StudioProcess StudioPrss = (StudioProcess)(ScanAddress(0x5D02B0));
+typedef int(*StudioPrss) (void);
+StudioPrss StudioProcess = (StudioPrss)(ScanAddress(0x5D02B0));
 
 typedef int(__cdecl *StudioInt) (void);
 StudioInt StudioInit = (StudioInt)(ScanAddress(0x5D01E0));
