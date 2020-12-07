@@ -12,7 +12,7 @@ void Inject()
 	printf("Unlocked after 18 years\n");
 	printf("This was unlocked by @DavidTheTech\n");
 
-	RegRunCode((DWORD *)Something, "Studio", (int)StudioPrss, (int)StudioInit, (int)StudioDone, (int)StudioPostInit, 0);
+	RegRunCode((DWORD *)Something, "Studio", (int)StudioProcess, (int)StudioInit, (int)StudioDone, (int)StudioPostInit, 0);
 }
 
 BOOL APIENTRY DllMain( HMODULE hModule,
