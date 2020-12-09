@@ -40,3 +40,6 @@ With this you can compile code in c# using c#
 
 # Left 4 Dead 2 BHOP (Day 8)
 Just a regular bhop for left 4 dead 2 (Newest Update)
+
+# String upload Via FTP in C# (Day 9)
+Upload strings directly to a text file via FTP
