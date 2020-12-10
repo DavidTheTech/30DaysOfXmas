@@ -43,3 +43,11 @@ Just a regular bhop for left 4 dead 2 (Newest Update)
 
 # String upload Via FTP in C# (Day 9)
 Upload strings directly to a text file via FTP
+
+# Download Builder in C# (Day 10)
+
+Build a auto downloader in C#
+![Preview](https://i.imgur.com/eoYi5VN.png)
+![Preview](https://i.imgur.com/hrdJghg.png)
+![Preview](https://i.imgur.com/1yPfiAW.png)
+![Preview](https://i.imgur.com/PVr63j3.png)
