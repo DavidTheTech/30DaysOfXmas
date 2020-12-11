@@ -52,5 +52,5 @@ Build a auto downloader in C#
 ![Preview](https://i.imgur.com/1yPfiAW.png)
 ![Preview](https://i.imgur.com/PVr63j3.png)
 
-# Post to PHP via WebClien in C# (Day 11)
+# Post to PHP via WebClient in C# (Day 11)
 Upload data to php via WebClient
