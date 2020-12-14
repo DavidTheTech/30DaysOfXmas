@@ -54,3 +54,10 @@ Build a auto downloader in C#
 
 # Post to PHP via WebClient in C# (Day 11)
 Upload data to php via WebClient
+
+# Desktop Background changer (Day 12)
+
+# Weather (Day 13)
+Get basic weather data
+
+# GZIP Compression (Day 14)
