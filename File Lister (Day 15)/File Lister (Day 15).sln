@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File Lister (Day 15)", "File Lister (Day 15)\File Lister (Day 15).csproj", "{D026EE56-0AF4-4028-A243-422F912B774E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D026EE56-0AF4-4028-A243-422F912B774E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D026EE56-0AF4-4028-A243-422F912B774E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D026EE56-0AF4-4028-A243-422F912B774E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D026EE56-0AF4-4028-A243-422F912B774E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
