@@ -117,18 +117,5 @@ namespace Stub
             File.WriteAllBytes("OUTPUT" + rand.Next(1, 200) + ".exe", newArray);
 
         }
-
-        static byte[] Compress(byte[] data)
-        {
-            using (MemoryStream compressedStream = new MemoryStream())
-            {
-                using (GZipStream zipStream = new GZipStream(compressedStream, CompressionMode.Compress))
-                {
-                    zipStream.Write(data, 0, data.Length);
-                    zipStream.Close();
-                    return compressedStream.ToArray();
-                }
-            }
-        }
     }
 }
