@@ -1,4 +1,4 @@
-﻿using Microsoft.CSharp;
+using Microsoft.CSharp;
 using System;
 using System.CodeDom.Compiler;
 using System.IO;
@@ -37,7 +37,7 @@ namespace StubBuilder
             
 
             Console.WriteLine("Enter c# app path");
-            string path = Console.ReadLine();
+            string path = Console.ReadLine().Replace('"', ' ');
 
             byte[] RAWDATA = File.ReadAllBytes(path);
             FileLength = RAWDATA.Length;
@@ -74,11 +74,13 @@ namespace Stub
         string Tmp = Path.GetTempFileName();
 
 
-            File.WriteAllBytes(Tmp + " + '"' + ".exe" + '"' + @", PackedFile);
+            File.WriteAllBytes(Tmp, PackedFile);
 
             Process proc = new Process();
 
-        proc.StartInfo.FileName = Tmp + " + '"' + ".exe" + '"' + @";
+        proc.StartInfo.FileName = Tmp;
+        proc.StartInfo.UseShellExecute  = false;
+
             proc.Start();
 
         }
