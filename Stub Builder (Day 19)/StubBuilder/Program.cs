@@ -36,7 +36,7 @@ namespace StubBuilder
 
             
 
-            Console.WriteLine("Enter c# app path");
+            Console.WriteLine("Enter app path");
             string path = Console.ReadLine().Replace('"', ' ');
 
             byte[] RAWDATA = File.ReadAllBytes(path);
